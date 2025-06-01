@@ -6,12 +6,43 @@
     tools:context=".FragmentB">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Fragment A"
-        android:background="@color/design_default_color_on_primary"
+        android:background="@color/sunflower"
         android:gravity="center"
-        />
+        android:padding="10dp"
+        android:orientation="vertical">
 
+        <TextView
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fragment B"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/white" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Input Data"
+            android:layout_marginVertical="25dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edtData"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnToFragmentA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pindah ke Halaman Fragment A"/>
+
+
+    </LinearLayout>
 </FrameLayout>
